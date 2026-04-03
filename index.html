@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="YourName Electric Services - Safe Wiring, Smart Solutions, 24/7 Emergency Support for Residential and Commercial clients.">
+  <meta name="keywords" content="electrician, electrical repair, wiring, switchboards, Solar installation">
+  <title>YourName Electric Services | 24/7 Support</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- Loading overlay -->
+  <div id="global-loader" class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container flex-between" style="height: 100%;">
+      <div class="logo">
+        <span class="logo-icon">⚡</span> <a href="index.html">YourName</a>
+      </div>
+      <nav id="nav-links" class="nav-links flex-center">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="track.html">Track</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn-primary" style="margin-left: var(--space-sm);">Book Service</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero flex-center">
+      <div class="container">
+        <div class="hero-content reveal">
+          <h1>Safe Wiring <br><span class="text-primary">Smart Solutions</span></h1>
+          <p>Industrial-grade electrical services for residential and commercial properties. We don't just fix problems,
+            we engineer solutions.</p>
+          <div class="flex" style="gap: 1rem;">
+            <a href="booking.html" class="btn btn-primary">Book Now</a>
+            <a href="tel:+18005550199" class="btn btn-outline"
+              style="color: var(--clr-bg); border-color: var(--clr-primary);">Emergency: 1-800-555-0199</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / Stats Section -->
+    <section class="stats section-padding">
+      <div class="container">
+        <div class="grid stats-grid reveal">
+          <div class="stat-item">
+            <h3>15+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Emergency Response</p>
+          </div>
+          <div class="stat-item">
+            <h3>10K+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Safety Record</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services section-padding" style="background-color: var(--clr-bg)">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Our Core Work</h2>
+        </div>
+        <div class="grid service-cards reveal" id="home-service-preview">
+          <!-- Dynamically populated from localStorage -->
+          <div class="card">
+            <div class="card-icon">🔌</div>
+            <h3>Residential Electrical</h3>
+            <p>Complete home wiring, switchboard upgrades, and safety inspections.</p>
+            <a href="service-details.html" class="text-primary"
+              style="font-weight: 600; margin-top: 1rem; display: inline-block;">View Specs &rarr;</a>
+          </div>
+          <div class="card">
+            <div class="card-icon">🏢</div>
+            <h3>Commercial Setup</h3>
+            <p>Heavy-duty compliance wiring, structured cabling, and lighting arrays.</p>
+            <a href="service-details.html" class="text-primary"
+              style="font-weight: 600; margin-top: 1rem; display: inline-block;">View Specs &rarr;</a>
+          </div>
+          <div class="card">
+            <div class="card-icon">☀️</div>
+            <h3>Solar & Backup</h3>
+            <p>Grid-tied solar installation, generator setups, and UPS systems.</p>
+            <a href="service-details.html" class="text-primary"
+              style="font-weight: 600; margin-top: 1rem; display: inline-block;">View Specs &rarr;</a>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-lg);" class="reveal">
+          <a href="services.html" class="btn btn-outline">View All Solutions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process section-padding">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Deployment Protocol</h2>
+        </div>
+        <div class="grid process-grid reveal">
+          <div class="process-step">
+            <div class="process-step-number">01</div>
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem;">Book Request</h4>
+            <p>Submit via our secure channel.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">02</div>
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem;">Inspection</h4>
+            <p>On-site diagnostics assessment.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">03</div>
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem;">Execution</h4>
+            <p>System repair or installation.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">04</div>
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem;">Sign-off</h4>
+            <p>Safety testing and completion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="testimonials section-padding" style="background-color: var(--clr-border)">
+      <div class="container reveal">
+        <div class="section-header">
+          <h2>Client Feedback</h2>
+        </div>
+        <div id="testimonial-slider" style="max-width: 800px; margin: 0 auto;">
+          <div class="testimonial-slide">
+            <p style="font-size: 1.2rem; font-style: italic;">"ProVolt responded to our manufacturing plant outage
+              within 20 minutes. Exceptional capability and absolute professionalism."</p>
+            <h4 style="margin-top: 1rem; font-family: var(--font-display); color: var(--clr-primary);">— Marcus D.,
+              TechFab Industries</h4>
+          </div>
+          <div class="testimonial-slide">
+            <p style="font-size: 1.2rem; font-style: italic;">"Upgraded our entire residential panel. Clean wiring,
+              exact estimates, zero issues. The best utilitarian approach I've seen."</p>
+            <h4 style="margin-top: 1rem; font-family: var(--font-display); color: var(--clr-primary);">— Sarah Jenkins
+            </h4>
+          </div>
+          <div class="testimonial-slide">
+            <p style="font-size: 1.2rem; font-style: italic;">"Solar panel integration was flawless. Their crew works
+              with military precision."</p>
+            <h4 style="margin-top: 1rem; font-family: var(--font-display); color: var(--clr-primary);">— Dr. H. Vance
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Banner -->
+    <section class="emergency-banner reveal">
+      <div class="container">
+        <h2>URGENT SYSTEM FAILURE?</h2>
+        <p style="margin: 1rem 0 2rem; font-size: 1.2rem;">Our rapid-response units are active 24/7.</p>
+        <a href="tel:+18005550199" class="btn btn-primary"
+          style="background: var(--clr-dominant); color: var(--clr-primary); border-color: var(--clr-dominant);">CALL
+          NOW : 1-800-555-0199</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="margin-bottom: 1rem;">
+            <span class="logo-icon">⚡</span> <span style="color: var(--clr-bg);">YourName</span>
+          </div>
+          <p style="color: #ccc;">Engineered electrical solutions for the modern grid.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sitemap</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="track.html">Track Ticket</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact & Location</h4>
+          <ul>
+            <li>Email: dispatch@yourname.local</li>
+            <li>Phone: 1-800-555-0199</li>
+            <li>Address: 404 Industrial Blvd, Sector 7G</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;
+          <script>document.write(new Date().getFullYear())</script> YourName Electric Services. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Global Elements -->
+  <div class="floating-widget">
+    <a href="#" class="float-btn back-top" id="back-top-btn" aria-label="Back to top">↑</a>
+    <a href="https://wa.me/18005550199" class="float-btn whatsapp" aria-label="Chat on WhatsApp">💬</a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const previewWrapper = document.getElementById('home-service-preview');
+      function updatePreview() {
+        if (!previewWrapper) return;
+        const srvs = JSON.parse(localStorage.getItem('provolt_services') || '[]');
+        if (srvs.length === 0) return;
+
+        const top3 = srvs.slice(0, 3);
+        let html = '';
+        const icons = ['🔌', '🏢', '☀️'];
+        top3.forEach((s, i) => {
+          html += `
+            <div class="card">
+              <div class="card-icon">${icons[i] || '⚡'}</div>
+              <h3>${s.title}</h3>
+              <p>${s.desc.length > 80 ? s.desc.substring(0, 80) + '...' : s.desc}</p>
+              <a href="service-details.html?id=${s.id}" class="text-primary" style="font-weight: 600; margin-top: 1rem; display: inline-block;">View Specs &rarr;</a>
+            </div>
+          `;
+        });
+        previewWrapper.innerHTML = html;
+      }
+      updatePreview();
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'provolt_services') updatePreview();
+      });
+    });
+  </script>
+  <script src="js/slider.js"></script>
+</body>
+
+
+</html>

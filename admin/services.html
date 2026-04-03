@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - ProVolt Admin</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="sidebar">
+      <div class="sidebar-header">⚡ ProVolt Admin</div>
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="appearance.html">Appearance</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      <div class="topbar">
+        <h3>Service Catalog Config</h3>
+        <div class="topbar-right">
+          <span style="font-weight: 600;">Admin</span>
+          <button id="logout-btn" class="btn btn-sm btn-danger">Logout</button>
+        </div>
+      </div>
+
+      <div class="content-body">
+        <div class="card">
+          <div class="card-header d-flex justify-between align-center">
+            <span>Public Service Listing (Live Sync)</span>
+            <button class="btn btn-sm btn-primary" onclick="window.ModalUtils.open('addModal')">+ Add Service</button>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Service Reference</th>
+                    <th>Classification Title</th>
+                    <th>Operational Description</th>
+                    <th>Controls</th>
+                  </tr>
+                </thead>
+                <tbody id="services-body">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="addModal">
+    <div class="modal-content">
+      <form id="service-form">
+        <div class="modal-header">
+          <h4 style="margin: 0;">Add New Capability</h4>
+          <button type="button" onclick="window.ModalUtils.close('addModal')" class="btn btn-sm btn-danger">X</button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Service Title</label>
+            <input type="text" id="s-title" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Full Description Context</label>
+            <textarea id="s-desc" class="form-control" rows="3" required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Save to System</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>

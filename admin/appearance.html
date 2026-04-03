@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appearance - ProVolt Admin</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <style>
+    .image-preview {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-top: 5px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      display: block;
+      background: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="sidebar">
+      <div class="sidebar-header">⚡ ProVolt Admin</div>
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="appearance.html" class="active">Appearance</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      <div class="topbar">
+        <h3>Appearance Config</h3>
+        <div class="topbar-right">
+          <span style="font-weight: 600;">Admin</span>
+          <button id="logout-btn" class="btn btn-sm btn-danger">Logout</button>
+        </div>
+      </div>
+
+      <div class="content-body" style="max-width: 800px;">
+        
+        <!-- Custom Colors -->
+
+
+
+        <div class="card mb-3">
+          <div class="card-header">Custom Theme Builder</div>
+          <div class="card-body">
+            <p style="margin-bottom: 1rem; color: #555;">Manually define exact layout colors to reskin every Card and layout element to any style.</p>
+            <form id="custom-theme-form">
+              <div class="form-group" style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                <input type="color" id="color-primary" value="#f4b400" style="width: 50px; height: 50px; padding: 0; cursor: pointer;">
+                <div>
+                  <label style="margin-bottom: 0;">Primary Accent Color</label>
+                  <small style="display: block; color: #888;">Used for buttons, highlights, and borders.</small>
+                </div>
+              </div>
+              <div class="form-group" style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                <input type="color" id="color-dominant" value="#1a1a1a" style="width: 50px; height: 50px; padding: 0; cursor: pointer;">
+                <div>
+                  <label style="margin-bottom: 0;">Dominant Header Color</label>
+                  <small style="display: block; color: #888;">Used for heavy headers and footers.</small>
+                </div>
+              </div>
+              <div class="form-group" style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                <input type="color" id="color-surface" value="#f9f9f9" style="width: 50px; height: 50px; padding: 0; cursor: pointer;">
+                <div>
+                  <label style="margin-bottom: 0;">Card Surface Background</label>
+                  <small style="display: block; color: #888;">Edits the background color of every Card and interface element.</small>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-1">Apply Custom Colors</button>
+              <button type="button" class="btn btn-danger mt-1" style="margin-left: 10px;" id="reset-colors">Reset Defaults</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Staff Images -->
+        <div class="card">
+          <div class="card-header">Team Roster Pictures</div>
+          <div class="card-body">
+            <p style="margin-bottom: 1rem; color: #555;">Upload pictures to an online host (like Imgur) and paste the exact direct link here.<br><strong style="color:#d9534f; font-weight: 600;">*Optimal Specific Resolution: 1:1 Aspect Ratio (e.g. 400x400px minimum) for best display.</strong></p>
+            <form id="staff-form">
+              
+              <div class="form-group">
+                <label>Chief Operating Officer (URL)</label>
+                <input type="text" id="staff-1-url" class="form-control" placeholder="https://example.com/image1.jpg">
+              </div>
+
+              <div class="form-group">
+                <label>Master Electrician (URL)</label>
+                <input type="text" id="staff-2-url" class="form-control" placeholder="https://example.com/image2.jpg">
+              </div>
+
+              <div class="form-group">
+                <label>Lead Grid Specialist (URL)</label>
+                <input type="text" id="staff-3-url" class="form-control" placeholder="https://example.com/image3.jpg">
+              </div>
+              
+              <button type="submit" class="btn btn-primary mt-3">Save Team Pictures</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/appearance.js"></script>
+</body>
+</html>
